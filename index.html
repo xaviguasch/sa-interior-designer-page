@@ -6,6 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Interior Designer Page</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@400;700&family=Montserrat:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header class="header header-home">
+      <div class="header-content">
+        <div class="header-mobile-title">
+          <p>This Interior</p>
+        </div>
+        <button aria-label="Open navigation" class="open-nav material-icons">menu</button>
+
+        <nav class="nav">
+          <button aria-label="Close navigation" class="close-nav">&times;</button>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Collection</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-info">
+          <h1 class="section-title">Modern interior</h1>
+          <p class="subtitle">
+            A full-Service residential & commercial interior design and staging company
+            offering professional organizing & eco-services.
+          </p>
+          <a class="btn btn-text"
+            >Read more <span class="material-icons"> arrow_right_alt </span></a
+          >
+        </div>
+
+        <div class="hero-art">
+          <img class="hero-image" src="./resources/photo1.png" alt="interior image" />
+
+          <div class="designer-label">
+            <div class="designer-card">
+              <div class="designer-portrait">
+                <img
+                  class="designer-image"
+                  src="./resources/img_avatar.png"
+                  alt="portrait"
+                />
+              </div>
+              <div class="designer-data">
+                <p class="designer-name">Xavi Guasch</p>
+                <p class="designer-profession">Interior Designer</p>
+              </div>
+            </div>
+            <h2 class="designer-signature">Designed in 2021 by Xavi Guasch</h2>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-text">Xavi Guasch</p>
+    </footer>
+  </body>
 </html>

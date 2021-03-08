@@ -1,0 +1,294 @@
+/* font-family: 'Crimson Pro', serif;
+
+font-family: 'Montserrat', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  background: #181719;
+}
+
+/*  ==================
+    Typography
+=====================  */
+
+.section-title {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-weight: 300;
+  width: 68%;
+}
+
+.btn-text {
+  font-weight: 600;
+}
+
+.designer-name {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.designer-profession {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #828282;
+  margin-top: 0;
+}
+
+.designer-signature {
+  width: 75%;
+  margin-top: 0;
+  margin-left: 0.5em;
+  font-size: 1.4rem;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
+
+.footer-text {
+  font-weight: 600;
+  color: #a9a9a9;
+}
+
+/* ==================
+    navigation
+===================== */
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.header-mobile-title p {
+  font-family: 'Crimson Pro', serif;
+  font-weight: 200;
+  line-height: 1.1;
+  border: 2px solid #ffff;
+  padding: 0.6em 0.9em;
+  text-transform: uppercase;
+}
+
+.nav {
+  position: fixed;
+  background: #181719;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  transform: translateX(0);
+  transition: transform 250ms;
+  z-index: 100;
+}
+
+.navigation-open {
+  transform: translateX(-100%);
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav-item {
+  margin: 1.2em 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #72726d;
+}
+
+.close-nav {
+  border: 0;
+  background: 0;
+  color: #fff;
+  font-weight: 300;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 0.5em;
+  position: absolute;
+  right: 0;
+}
+
+.open-nav {
+  border: 0;
+  background: 0;
+  color: #fff;
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 2.5rem;
+  align-self: baseline;
+}
+
+/* ==================
+    general layout
+===================== */
+
+.hero {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.hero-info {
+  margin-bottom: 2em;
+}
+
+.material-icons {
+  transform: translateY(30%);
+  margin-left: 0.4em;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.designer-label {
+  background: #181719;
+  padding: 0.5em;
+  transform: translate(5%, -45%);
+  width: 85%;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.designer-card {
+  display: flex;
+}
+
+.designer-portrait {
+  padding: 1em;
+}
+
+.designer-image {
+  border-radius: 50%;
+  width: 3rem;
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  padding: 1em;
+}
+
+.footer-text {
+  border-top: 1px solid #ffffff;
+  padding-top: 1em;
+}
+
+@media (min-width: 950px) {
+  .header-mobile-title {
+    width: 20%;
+    text-align: center;
+    margin-left: 3em;
+  }
+  .open-nav,
+  .close-nav {
+    display: none;
+  }
+
+  .nav {
+    position: initial;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 2em;
+  }
+
+  .nav-item {
+    margin-left: 3em;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .hero {
+    display: flex;
+    padding: 6em 0em 2em;
+  }
+
+  .hero-info {
+    padding-top: 0;
+  }
+
+  .section-title {
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    margin-top: 0;
+    font-size: 1.4rem;
+    width: 73%;
+  }
+
+  .btn-text {
+    font-size: 1rem;
+  }
+
+  .designer-label {
+    padding: 0.2em;
+    width: 60%;
+    transform: translate(30%, -45%);
+  }
+
+  .designer-signature {
+    width: 60%;
+  }
+
+  .footer-text {
+    border-top: none;
+  }
+}
+
+@media (min-width: 1290px) {
+  .header {
+    margin: 0 auto;
+  }
+
+  .header-mobile-title {
+    margin-left: 1.2em;
+  }
+
+  .nav-list {
+    margin-right: 0.5em;
+  }
+
+  .header,
+  .hero {
+    max-width: 1250px;
+  }
+}
